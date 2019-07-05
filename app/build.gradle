@@ -47,6 +47,8 @@ dependencies {
     implementation "org.koin:koin-android-viewmodel:$koin_version"
     // Koin Android Experimental features
     implementation "org.koin:koin-android-ext:$koin_version"
+    // Images
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
 
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'

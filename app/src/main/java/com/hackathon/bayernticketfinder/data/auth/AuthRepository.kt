@@ -11,7 +11,7 @@ import com.hackathon.bayernticketfinder.data.Result
 
 interface AuthRepository {
     fun loginUser(email: String, password: String): LiveData<Result<FirebaseUser>>
-    fun registerUser(newUser: NewUser): LiveData<Result<FirebaseUser>>
+    fun registerUser(user: User): LiveData<Result<FirebaseUser>>
 }
 
 class AuthRepositoryImpl : AuthRepository {
@@ -35,11 +35,11 @@ class AuthRepositoryImpl : AuthRepository {
         return loginResult
     }
 
-    override fun registerUser(newUser: NewUser): LiveData<Result<FirebaseUser>> {
+    override fun registerUser(user: User): LiveData<Result<FirebaseUser>> {
 
         val registrationResult = MutableLiveData<Result<FirebaseUser>>()
 
-        auth.createUserWithEmailAndPassword(newUser.userEmail, newUser.userPassword)
+        auth.createUserWithEmailAndPassword(user.userEmail, user.userPassword)
             .addOnCompleteListener { task: Task<AuthResult> ->
                 if (task.isSuccessful) {
                     Log.d("AuthRepository", "signInWithEmail:success")
