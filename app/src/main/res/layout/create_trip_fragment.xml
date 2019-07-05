@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:support="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.create.CreateTripFragment">
+
+    <ImageView
+        android:id="@+id/starting_location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_trip_origin_24px"
+        support:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/half_horizontal_margin"
+        support:layout_constraintTop_toTopOf="@id/starting_location"
+        support:layout_constraintBottom_toBottomOf="@id/starting_location"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/starting_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/choose_start_location"
+            support:layout_constraintTop_toTopOf="parent"
+            support:layout_constraintStart_toEndOf="@id/starting_location_icon"
+            support:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/half_horizontal_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/destination_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_destination_24dp"
+        support:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/half_horizontal_margin"
+        support:layout_constraintTop_toTopOf="@id/destination"
+        support:layout_constraintBottom_toBottomOf="@id/destination"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/destination"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/destination"
+        support:layout_constraintTop_toBottomOf="@id/starting_location"
+        support:layout_constraintStart_toEndOf="@id/starting_location_icon"
+        support:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/half_horizontal_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/calendar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar_today_24dp"
+        support:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/half_horizontal_margin"
+        support:layout_constraintTop_toTopOf="@id/departure_time"
+        support:layout_constraintBottom_toBottomOf="@id/regress_time"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/departure_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/departure_time"
+        support:layout_constraintTop_toBottomOf="@id/destination"
+        support:layout_constraintStart_toEndOf="@id/calendar_icon"
+        support:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/half_horizontal_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/departure_time_edit"
+            android:focusableInTouchMode="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regress_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/regress_time"
+        support:layout_constraintTop_toBottomOf="@id/departure_time"
+        support:layout_constraintStart_toEndOf="@id/calendar_icon"
+        support:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/half_horizontal_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/number_of_people_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_people_24dp"
+        support:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/half_horizontal_margin"
+        support:layout_constraintTop_toTopOf="@id/number_of_people"
+        support:layout_constraintBottom_toBottomOf="@id/number_of_people"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/number_of_people"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/number_of_people"
+        support:layout_constraintTop_toBottomOf="@id/regress_time"
+        support:layout_constraintStart_toEndOf="@id/calendar_icon"
+        support:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/half_horizontal_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

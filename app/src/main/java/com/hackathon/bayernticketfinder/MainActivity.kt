@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
-        val navGraphIds = listOf(R.navigation.feed, R.navigation.mytrips, R.navigation.profile)
+        val navGraphIds = listOf(R.navigation.new_trip, R.navigation.feed, R.navigation.mytrips, R.navigation.profile)
 
         // Setup the bottom navigation view with a list of navigation graphs
         val controller = bottomNavigationView.setupWithNavController(

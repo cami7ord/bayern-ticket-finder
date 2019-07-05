@@ -13,7 +13,14 @@
     <string name="trips">"Trips"</string>
     <string name="my_trips">"My Trips"</string>
     <string name="profile">"Profile"</string>
+    <string name="new_trip">New trip</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="choose_start_location">Choose starting location</string>
+    <string name="destination">Destination</string>
+    <string name="departure_time">Departure time</string>
+    <string name="regress_time">Regress time</string>
+    <string name="number_of_people">Number of people</string>
 </resources>
