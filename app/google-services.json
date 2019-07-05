@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "340057567409-g2d6a60jom2n7vlk2qbjp0ff30nph59s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackathon.bayernticketfinder",
+            "certificate_hash": "b7b5ac78b5d568c28f3059808b4eed8593d02411"
+          }
+        },
+        {
           "client_id": "340057567409-c9cvjnj0fc3gqnf4bj052sf0a4il4jos.apps.googleusercontent.com",
           "client_type": 3
         }
