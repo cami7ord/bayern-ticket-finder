@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_map_24dp"
+        android:contentDescription="@string/trips"
+        android:title="@string/trips" />
+    <item
+        android:id="@+id/mytrips"
+        android:icon="@drawable/ic_person_pin_24dp"
+        android:contentDescription="@string/my_trips"
+        android:title="@string/my_trips" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person_24dp"
+        android:contentDescription="@string/profile"
+        android:title="@string/profile" />
+
+</menu>
